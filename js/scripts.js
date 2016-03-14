@@ -83,49 +83,10 @@ $(document).ready(function(){
     }
 });
 
-/***************** Flexsliders ******************/
-
-$(window).load(function() {
-
-	$('#portfolioSlider').flexslider({
-		animation: "slide",
-		directionNav: false,
-		controlNav: true,
-		touch: false,
-		pauseOnHover: true,
-		start: function() {
-			$.waypoints('refresh');
-		}
-	});
-
-	$('#servicesSlider').flexslider({
-		animation: "slide",
-		directionNav: false,
-		controlNav: true,
-		touch: true,
-		pauseOnHover: true,
-		start: function() {
-			$.waypoints('refresh');
-		}
-	});
-
-	$('#teamSlider').flexslider({
-		animation: "slide",
-		directionNav: false,
-		controlNav: true,
-		touch: true,
-		pauseOnHover: true,
-		start: function() {
-			$.waypoints('refresh');
-		}
-	});
-
-});
-
 /***************** Owl Slider ******************/
 
 $(document).ready(function() {
-  $('#owl-example').owlCarousel({
+  $('#owl-example, #designOwl').owlCarousel({
     items: 5,
     itemsCustom: false,
     itemsDesktop: [1199, 4],
