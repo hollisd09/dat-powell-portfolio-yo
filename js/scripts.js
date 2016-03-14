@@ -45,26 +45,6 @@ $(window).load(function() {
 
 });
 
-/***************** Smooth Scrolling ******************/
-
-$(function() {
-
-	$('a[href*=#]:not([href=#])').click(function() {
-		if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
-
-			var target = $(this.hash);
-			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-			if (target.length) {
-				$('html,body').animate({
-					scrollTop: target.offset().top
-				}, 2000);
-				return false;
-			}
-		}
-	});
-
-});
-
 /***************** Nav Transformicon ******************/
 
 document.querySelector("#nav-toggle").addEventListener("click", function() {
@@ -140,4 +120,44 @@ $(window).load(function() {
 		}
 	});
 
+});
+
+/***************** Owl Slider ******************/
+
+$(document).ready(function() {
+  $('#owl-example').owlCarousel({
+    items: 5,
+    itemsCustom: false,
+    itemsDesktop: [1199, 4],
+    itemsDesktopSmall: [980, 3],
+    itemsTablet: [768, 2],
+    itemsTableSmall: false,
+    itemsMobile: [479, 1],
+    singleItem: true,
+    itemsScaleUp: false,
+    slideSpeed: 200,
+    paginationSpeed: 800,
+    rewindSpeed: 1000,
+    autoPlay: false,
+    stopOnHover: false,
+    navigation: false,
+    navigationText: ['prev', 'next'],
+    rewindNav: true,
+    scrollPerPage: false,
+    pagination: true,
+    paginationNumbers: false,
+    responsive: true,
+    responsiveRefreshRate: 200,
+    responsiveBaseWidth: window,
+    baseClass: 'owl-carousel',
+    theme: 'owl-theme',
+    lazyLoad: false,
+    lazyFollow: true,
+    lazyEffect: 'fade',
+    autoHeight: false,
+    dragBeforeAnimFinish: true,
+    mouseDrag: true,
+    touchDrag: true,
+    transitionStyle: false
+  });
 });
