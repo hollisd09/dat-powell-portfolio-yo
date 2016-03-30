@@ -1,5 +1,5 @@
 {
-  "name": "dat-powell-portfolio-yo",
+  "name": "powell-portfolio",
   "version": "1.0.0",
   "description": "---",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hollisd09/dat-powell-portfolio-yo.git"
+    "url": "git+https://github.com/hollisd09/powell-portfolio.git"
   },
   "author": "Danielle Hollis <hollisd09@gmail.com> (http://www.hollisdesignsstudio.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hollisd09/dat-powell-portfolio-yo/issues"
+    "url": "https://github.com/hollisd09/powell-portfolio/issues"
   },
-  "homepage": "https://github.com/hollisd09/dat-powell-portfolio-yo#readme",
+  "homepage": "https://github.com/hollisd09/powell-portfolio#readme",
   "dependencies": {
     "bootstrap": "^3.3.6",
     "jade": "^1.11.0",
